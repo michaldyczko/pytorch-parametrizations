@@ -2,7 +2,7 @@
 
 ## Spectral Parametrization
 
-    This module provides a PyTorch implementation of the spectral parametrization of the weights of a 2D convolutional layer, as introduced in the paper "Efficient Nonlinear Transforms for Lossy Image Compression" by Johannes Ballé, PCS 2018.
+This module provides a PyTorch implementation of the spectral parametrization of the weights of a 2D convolutional layer, as introduced in the paper "Efficient Nonlinear Transforms for Lossy Image Compression" by Johannes Ballé, PCS 2018.
 
 ### Usage
 
@@ -29,9 +29,9 @@ print(conv.parametrizations.weight)
 
 ## register_spectral_parametrization
 
-    This function registers the spectral parametrization for every Conv2d and ConvTranspose2d layer in a given module.
+This function registers the spectral parametrization for every Conv2d and ConvTranspose2d layer in a given module.
 
-### Usage
+### Usagev
 
 ```python
 import torch
