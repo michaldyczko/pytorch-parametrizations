@@ -29,7 +29,7 @@ print(conv.parametrizations.weight)
 
 ## register_spectral_parametrization
 
-This function registers the spectral parametrization for every Conv2d and ConvTranspose2d layer in a given module.
+This function registers the spectral parametrization for every Conv2d and ConvTranspose2d module in a given module.
 
 ### Usagev
 
@@ -47,7 +47,7 @@ module = torch.nn.Sequential(
     torch.nn.Sigmoid()
 )
 
-# Register the spectral parametrization for every Conv2d and ConvTranspose2d layer in the module
+# Register the spectral parametrization for every Conv2d and ConvTranspose2d module in the module
 register_spectral_parametrization(module)
 
 print(module)
@@ -82,7 +82,7 @@ print(module)
 #   (5): Sigmoid()
 # )
 
-# Unregister the spectral parametrization for every Conv2d and ConvTranspose2d layer in the module
+# Unregister the spectral parametrization for every Conv2d and ConvTranspose2d module in the module
 register_spectral_parametrization(module, undo=True)
 
 print(module)
